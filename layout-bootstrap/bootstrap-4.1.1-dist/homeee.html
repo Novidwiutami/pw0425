@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fa/web/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.htm"
+    });
+  });
+</script>
+  </head>
+
+  <body>
+  	<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+  	</div>
+    <div class ="row">
+    <div class="col-md-12 menu">
+      some menu will be placed here!
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="alert alert-warning">berita pekan ini</div>
+          <p> entah berita hari ini adalah saya tidaklah tau </p> 
+          </div>
+
+        <div class="row">
+        <div class="col-md-4">
+        <div class="alert alert-warning"> berita pekan lalu</div>
+        <p> berita pekan lalu pun saya juga tidak tau</p>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-4">
+        <div class="alert alert-warning"> berita pekan akan datang</div>
+        <p> berita yang akan datang tidaklah bisa di prediksi </p>
+        </div>
+        </div>
+        </div>
+
+  	</body>
+</html>
